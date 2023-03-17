@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<!-- Head Start-->
+
+    <head>
+        <title>Triatlon Weblap</title>
+        <link rel="stylesheet" href="Triatlon_Stylesheet.css" type="text/css">
+        <meta charset="UTF-8">
+        <style>
+            body {
+            background-image: url('joyd_ulvg_160528.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        </style>
+        <script>
+            function toLoginPage(){
+                window.open("Login_Page.html", "_self");
+            }
+        </script>
+    </head>
+
+    <!-- Body Start-->
+    
+    <body class="body-logreg-bgIMG">
+        <div class="navbar">
+            <a href="Triatlon_Main_Site.html">Kezdőlap</a>
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn">Profil</button>
+                <div class="dropdown-content">
+                    <a href="Login_Page.html">Log In</a>
+                    <a href="Register_Page.html">Register</a>
+                </div>
+              </div>
+        </div>
+        <br><br>
+        <table align="center">
+            <tr>
+                <th>Új fiók létrehozása</th>
+            </tr><tr><td>
+            <table align="center" class="inner-table">
+                <tr><td>
+                    <label for="inputUserName">Felhasználónév: </label><br>
+                    <input type="text" id="inputUserName" size="50%">
+                </td></tr>
+                <tr><td>
+                    <label for="inputEmail">E-mail cím: </label><br>
+                    <input type="email "inputEmail" size="50%">
+                </td></tr>
+                <tr><td>
+                    <label for="inputPassword">Jelszó: </label><br>
+                    <input type="password" id="inputPassword" size="50%">
+                </td></tr>
+            </table>
+        </td></tr>
+        <tr><td>
+            <button class="login-register-buttons" onclick="toLoginPage()">Van Már Fiókom</button>
+            <button class="login-register-buttons">Fiók Létrehozása</button>
+        </td></tr>
+        </table>
+    </body>
+</html>
