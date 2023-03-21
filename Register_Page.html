@@ -41,17 +41,36 @@
                 <th>Új fiók létrehozása</th>
             </tr><tr><td>
             <table align="center" class="inner-table">
-                <tr><td>
+                <tr><td colspan="2">
                     <label for="inputUserName">Felhasználónév: </label><br>
                     <input type="text" id="inputUserName" size="50%">
                 </td></tr>
-                <tr><td>
+                <tr><td colspan="2">
                     <label for="inputEmail">E-mail cím: </label><br>
                     <input type="email "inputEmail" size="50%">
                 </td></tr>
-                <tr><td>
+                <tr><td colspan="2">
                     <label for="inputPassword">Jelszó: </label><br>
                     <input type="password" id="inputPassword" size="50%">
+                </td></tr>
+                <tr><td>
+                        <label for="inputFirstname">Vezetéknév: </label><br>
+                        <input type="text" id="inputFirstname" size="20%">
+                    <td>
+                        <label for="inputLastname">Keresztnév: </label><br>
+                        <input type="text" id="inputLastname" size="20%">
+                    </td>
+                </td></tr>
+                <tr><td>
+                    <label for="inputGender">Nem: </label><br>
+                    <select id="inputGender">
+                        <option value="1">Férfi</option>
+                        <option value="2">Nő</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="inputAge">Születési dátum: </label><br>
+                    <input type="date" id="inputBirth" size="20%">
                 </td></tr>
             </table>
         </td></tr>
